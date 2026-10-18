@@ -1,0 +1,30 @@
+# PotionStacker Configuration
+
+# which potion kinds /pot stacks
+potions:
+  potion: true
+  splash: true
+  lingering: true
+
+# how many potions fit in one stack (1-99)
+default-stack-size: 64
+
+# per-type overrides of default-stack-size, keyed by potion type.
+# LONG_ and STRONG_ variants use their base type's size unless they have their own entry.
+# types: WATER, MUNDANE, THICK, AWKWARD, NIGHT_VISION, INVISIBILITY, LEAPING, FIRE_RESISTANCE, SWIFTNESS,
+#        SLOWNESS, WATER_BREATHING, HEALING, HARMING, POISON, REGENERATION, STRENGTH, WEAKNESS, LUCK,
+#        TURTLE_MASTER, SLOW_FALLING, WIND_CHARGED, WEAVING, OOZING, INFESTED
+stack-sizes:
+#  HEALING: 16
+#  STRONG_HEALING: 8
+
+# plugin messaging
+# You can use hex color codes like &#ff009d or minecraft color codes like &d
+messages:
+  stacked: "&aStacked {potions} potions into {stacks} stacks."
+  nothing-to-stack: "&cYou don't have any potions to stack."
+  dropped-overflow: "&eSome potions didn't fit in your inventory and were dropped at your feet."
+  reloaded: "&aPotionStacker reloaded!"
+  no-permission: "&cYou don't have permission to do that!"
+  player-only: "&cThis command can only be run by a player."
+  usage: "&cUsage: /{label} [reload]"

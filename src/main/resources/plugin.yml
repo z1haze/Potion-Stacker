@@ -1,0 +1,19 @@
+name: PotionStacker
+version: '${project.version}'
+author: z1haze
+description: Stack potions in your inventory
+main: me.z1haze.potionstacker.PotionStacker
+api-version: '26.3'
+
+commands:
+  pot:
+    description: Stacks the potions in your inventory
+    usage: /<command> [reload]
+
+permissions:
+  potionstacker.use:
+    description: Allows stacking potions with /pot
+    default: true
+  potionstacker.reload:
+    description: Allows reloading the config with /pot reload
+    default: op
