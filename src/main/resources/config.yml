@@ -23,6 +23,7 @@ stack-sizes:
 messages:
   stacked: "&aStacked {potions} potions into {stacks} stacks."
   nothing-to-stack: "&cYou don't have any potions to stack."
+  already-stacked: "&eYour potions are already stacked."
   dropped-overflow: "&eSome potions didn't fit in your inventory and were dropped at your feet."
   reloaded: "&aPotionStacker reloaded!"
   no-permission: "&cYou don't have permission to do that!"

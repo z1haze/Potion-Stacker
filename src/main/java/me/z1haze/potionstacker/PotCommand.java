@@ -109,6 +109,12 @@ public final class PotCommand implements TabExecutor {
             return;
         }
 
+        // every kind of potion sits in a single slot already, so there's nothing to merge
+        if (slots.stream().allMatch(group -> group.size() == 1)) {
+            plugin.sendMessage(player, "already-stacked");
+            return;
+        }
+
         List<Group> groups = new ArrayList<>();
         for (int i = 0; i < keys.size(); i++) {
             groups.add(new Group(totals.get(i), stackSizeFor(keys.get(i)), slots.get(i)));
