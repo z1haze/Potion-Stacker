@@ -6,7 +6,7 @@
 
     <groupId>me.z1haze</groupId>
     <artifactId>PotionStacker</artifactId>
-    <version>3.0.1</version>
+    <version>3.0.2</version>
     <packaging>jar</packaging>
 
     <name>PotionStacker</name>
@@ -100,7 +100,7 @@
         <dependency>
             <groupId>me.z1haze</groupId>
             <artifactId>plugin-commons</artifactId>
-            <version>1.0.0</version>
+            <version>1.2.0</version>
             <scope>compile</scope>
         </dependency>
 

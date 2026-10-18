@@ -1,6 +1,7 @@
 package me.z1haze.potionstacker;
 
 import me.z1haze.commons.util.ChatUtils;
+import me.z1haze.commons.util.FileUtils;
 import org.bstats.bukkit.Metrics;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.PluginCommand;
@@ -15,7 +16,7 @@ public final class PotionStacker extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        saveDefaultConfig();
+        FileUtils.saveAndMergeDefaultConfig(this);
 
         ChatUtils.init(this, PREFIX);
 
